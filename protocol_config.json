@@ -1,0 +1,68 @@
+{
+  "study": "operational_failure_attribution",
+  "dataset": "MedMentions ST21pv",
+  "split_policy": "official train/dev/test",
+  "seed": 20260721,
+  "extraction_documents": 100,
+  "linking_mentions": 300,
+  "linking_candidates": 5,
+  "ambiguous_linking_mentions": 98,
+  "models": [
+    "openai/gpt-oss-20b",
+    "openai/gpt-oss-120b",
+    "qwen/qwen3.6-27b"
+  ],
+  "fixed_architecture_conditions": [
+    "grounded extraction",
+    "candidate-constrained linking"
+  ],
+  "fixed_model": "openai/gpt-oss-120b",
+  "architecture_baselines": [
+    "free-form extraction",
+    "unconstrained UMLS CUI generation"
+  ],
+  "temperature": 0,
+  "structured_output": "JSON object mode",
+  "bootstrap_resamples": 10000,
+  "practical_effect_threshold": 0.05,
+  "attribution_classes": [
+    "model-dominant",
+    "architecture-dominant",
+    "hybrid",
+    "unresolved"
+  ],
+  "provider": "GroqCloud",
+  "api_endpoint": "https://api.groq.com/openai/v1/chat/completions",
+  "inference_dates": [
+    "2026-07-21",
+    "2026-07-22"
+  ],
+  "immutable_snapshot_ids_available": false,
+  "messages": "one user message; no system message",
+  "max_completion_tokens": {
+    "extraction": 4096,
+    "linking": 512
+  },
+  "top_p": "provider default",
+  "frequency_penalty": "provider default",
+  "presence_penalty": "provider default",
+  "reasoning_controls": {
+    "openai/gpt-oss-20b": {
+      "reasoning_effort": "low",
+      "include_reasoning": false
+    },
+    "openai/gpt-oss-120b": {
+      "reasoning_effort": "low",
+      "include_reasoning": false
+    },
+    "qwen/qwen3.6-27b": {
+      "reasoning_effort": "none",
+      "reasoning_format": "hidden"
+    }
+  },
+  "sensitivity_thresholds": [
+    0.03,
+    0.05,
+    0.1
+  ]
+}

@@ -1,0 +1,7 @@
+failure_category,classification,evidence
+Overall exact-span extraction,Model-dominant,Qwen vs GPT-OSS 120B grounded F1 difference >=5 points with CI excluding zero; 120B grounding gain was <5 points.
+Unsupported entity generation,Hybrid,A material fixed-architecture model difference and a material fixed-model grounding reduction were both observed.
+Entity-boundary error,Model-dominant under tested intervention,A material model difference was observed; grounding increased rather than remediated boundary errors.
+Candidate-ranking error,Architecture-dominant,"Constrained-model differences were <5 points, while candidate restriction improved 120B accuracy by >5 points with CI excluding zero."
+Malformed ontology code,Architecture-dominant,Candidate restriction reduced invalid-CUI output by >5 points with CI excluding zero.
+Ambiguous surface-form linking,Architecture-dominant,"Constrained-model differences were small; candidate restriction materially improved the paired ambiguous subset, although accuracy remained near 51%."

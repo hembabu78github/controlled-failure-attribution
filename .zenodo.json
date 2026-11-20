@@ -1,0 +1,25 @@
+{
+  "title": "Controlled Failure Attribution for Trustworthy Clinical Information Extraction: Reproducibility Package",
+  "description": "Code, exact prompt logic, frozen protocol configuration and compact derived results supporting the OAIC'26 paper 'Controlled Failure Attribution for Trustworthy Clinical Information Extraction: Separating Model and Pipeline Effects'.",
+  "creators": [
+    {
+      "name": "Babu, Hemachandran",
+      "orcid": "0009-0002-7560-2551"
+    },
+    {
+      "name": "K, Priyadarsini",
+      "orcid": "0000-0003-2374-3184"
+    }
+  ],
+  "keywords": [
+    "clinical information extraction",
+    "clinical NLP",
+    "large language models",
+    "UMLS",
+    "failure attribution",
+    "trustworthy AI",
+    "MedMentions",
+    "reproducibility"
+  ],
+  "version": "1.0.0"
+}

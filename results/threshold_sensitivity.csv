@@ -1,0 +1,7 @@
+failure_category,3_point,5_point,10_point,notes
+Overall exact-span extraction,Hybrid,Model-dominant,Model-dominant,Architecture F1 gain is 4.28 points; model effects exceed all thresholds.
+Unsupported entity generation,Hybrid,Hybrid,Model-dominant,Architecture reduction is 7.04 points; model reduction is 28.78 points.
+Entity-boundary error,Model-dominant under tested intervention,Model-dominant under tested intervention,Unresolved (architecture adverse),Model reduction is 7.21 points; grounding worsened boundary rate by 6.73 points.
+Candidate-ranking error,Architecture-dominant,Architecture-dominant,Architecture-dominant,Architecture accuracy gain is 73.67 points; model differences are small and uncertain.
+Malformed ontology code,Architecture-dominant,Architecture-dominant,Unresolved,Architecture invalid-rate reduction is 7.67 points.
+Ambiguous surface-form linking,Architecture-dominant,Architecture-dominant,Architecture-dominant,Architecture accuracy gain is 50.00 points; model differences are small and uncertain.
